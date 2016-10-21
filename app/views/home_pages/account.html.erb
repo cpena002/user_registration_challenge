@@ -1,0 +1,15 @@
+<h1>Confirmation: Account created successfully</h1>
+<hr/>
+<br/>
+
+ Your user id is: <%= @user.user_id %>
+<br/>
+<br/>
+Enter password to log in.
+ <form action="/home_pages/login" method="post">
+   <label for="password_id">Password</label>
+   <input type="text" name="password" id="password_id"/>
+   <label for="user_id">User ID:</label>
+   <input type="text" name="user_id" id="user_id" required/>
+   <input type="submit" value="Log In" id="btn">
+ </form>
